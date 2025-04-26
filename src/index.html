@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Match Manager</h1>
+    </header>
+    <main>
+        <aside>
+            <h2>Lista de jogadores</h2>
+            <textarea name="playerList" id="playerList" placeholder="Digite os nomes por linha"></textarea>
+            <button id="btnGenerate">Gerar</button>
+            <button id="btnReset">Resetar</button>
+        </aside>
+        <section id="bracket">
+            <div class="match_box">
+                <h2>Final</h2>
+                <div class="match_box_players">
+                    <span>Player João</span>
+                    <div>✖️</div>
+                    <span>Player Leo</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+            &copy; Victor rights reserved
+    </footer>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

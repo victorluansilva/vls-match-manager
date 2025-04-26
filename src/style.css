@@ -1,0 +1,90 @@
+/* Definição de variáveis CSS */
+:root {
+    --bg: #111;
+    --fg: #eee;
+    --accent: #3498db;
+    --aside-bg: #222;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: var(--fg);
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+aside {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+aside textarea {
+    flex: 1;
+    resize: vertical;
+    padding: 0.5rem;
+    background: var(--aside-bg);
+    color: var(--fg);
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+}
+
+aside button {
+    padding: 0.5rem;
+    background: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+    color: var(--fg);
+    cursor: pointer;
+}
+
+.bracket {
+    flex: 1;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.match_box {
+    color: var(--fg);
+}
+
+.match_box .match_box_players {
+    background: var(--aside-bg);
+    border-radius: 10px;
+    border: 1px solid var(--accent);
+    padding: 0.9rem;
+}
+
+.match_box h2{
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    color: var(--fg);
+}
